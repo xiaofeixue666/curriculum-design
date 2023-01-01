@@ -1,0 +1,18 @@
+void Printflove() {//打印爱心 
+	float a, x, y;
+	for (y = 1.5f; y > -1.5f; y -= 0.1f) {
+		for (x = -1.5f; x < 1.5f; x += 0.05f) {
+			a = x * x + y * y - 1;
+			char ch = a * a * a - x * x * y * y * y <= 0.0f ? '*' : ' ';
+			putchar(ch);
+		}
+		printf("\n");
+		printf("\t\t\t  ");
+	}
+}
+
+void Goodbye() {//结束程序 
+	system("cls");
+	printf("\t\t\t\t        欢迎下次使用！~再见！~~           \n");
+	exit(0);
+}
